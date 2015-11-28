@@ -6,9 +6,9 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Helper class for providing sample content for user interfaces created by
- * Android template wizards.
- * <p>
+ * Helper class for providing sample content for user interfaces created by Android template
+ * wizards.
+ * <p/>
  * TODO: Replace all uses of this class before publishing your app.
  */
 public class DummyContent {
@@ -32,16 +32,16 @@ public class DummyContent {
         }
     }
 
-    private static void addItem(DummyItem item) {
+    private static void addItem (DummyItem item) {
         ITEMS.add(item);
         ITEM_MAP.put(item.id, item);
     }
 
-    private static DummyItem createDummyItem(int position) {
+    private static DummyItem createDummyItem (int position) {
         return new DummyItem(String.valueOf(position), "Item " + position, makeDetails(position));
     }
 
-    private static String makeDetails(int position) {
+    private static String makeDetails (int position) {
         StringBuilder builder = new StringBuilder();
         builder.append("Details about Item: ").append(position);
         for (int i = 0; i < position; i++) {
@@ -58,14 +58,14 @@ public class DummyContent {
         public final String content;
         public final String details;
 
-        public DummyItem(String id, String content, String details) {
+        public DummyItem (String id, String content, String details) {
             this.id = id;
             this.content = content;
             this.details = details;
         }
 
         @Override
-        public String toString() {
+        public String toString () {
             return content;
         }
     }
